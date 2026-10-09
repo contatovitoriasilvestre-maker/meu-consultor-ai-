@@ -116,3 +116,18 @@ O MEU CONSULTOR combina aprendizado aplicado, desenvolvimento de produto e exper
 ---
 
 *Documentação em evolução. Os estágios de implementação serão atualizados conforme cada funcionalidade for validada e puder ser demonstrada.*
+Conteúdo para copiar
+
+## Documentação técnica e estudos de caso
+
+### Arquitetura do sistema
+
+[Conheça a arquitetura técnica do MEU CONSULTOR](docs/arquitetura.md)
+
+Documentação da integração entre WhatsApp, n8n, agentes de IA e Supabase, incluindo o fluxo de processamento e persistência de dados.
+
+### Case técnico 01 — Agendamentos inteligentes
+
+[Veja o case de agendamentos pelo WhatsApp](case-studies/agendamentos-whatsapp.md)
+
+Estudo de caso de uma funcionalidade operacional que permite criar e consultar agendamentos por linguagem natural, utilizando automação, IA e banco de dados.
