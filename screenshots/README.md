@@ -1,113 +1,148 @@
 # Evidências técnicas — MEU CONSULTOR AI
 
-## 1. Visão geral
+## 1. Sobre este diretório
 
-O MEU CONSULTOR AI é um projeto de assistente inteligente integrado ao WhatsApp, desenvolvido com automações no n8n, agentes de inteligência artificial e persistência de dados no Supabase.
+Este diretório documenta evidências visuais do desenvolvimento do **MEU CONSULTOR AI**, um projeto autoral de assistente inteligente integrado ao WhatsApp.
 
-Este diretório reúne evidências visuais de implementação, testes e execução de diferentes funcionalidades do projeto.
+A solução utiliza automações no n8n, componentes de inteligência artificial, integrações por APIs e webhooks e persistência de dados no Supabase.
 
-As capturas representam etapas específicas do desenvolvimento e não constituem, isoladamente, comprovação de funcionamento de todas as funcionalidades em produção.
+**Objetivo da documentação:** apresentar decisões de implementação, fluxos automatizados, integrações e competências técnicas desenvolvidas durante a construção do produto.
 
-## 2. Interface conversacional no WhatsApp
+As capturas representam momentos específicos do desenvolvimento e não comprovam, isoladamente, a estabilidade ou a disponibilidade das funcionalidades em produção.
 
-### Apresentação do assistente
+## 2. Interface conversacional — WhatsApp
+
+### 2.1 Apresentação do assistente
 
 ![Apresentação do MEU CONSULTOR](01-whatsapp-apresentacao.jpg)
 
-Demonstra a interface conversacional utilizada para apresentar as funcionalidades do assistente aos usuários.
+**Descrição:** interface conversacional utilizada para apresentar as funcionalidades do MEU CONSULTOR.
 
-### Agendamento e consulta
+**Competências relacionadas:**
+- Desenvolvimento de experiências conversacionais.
+- Integração de mensagens com processos automatizados.
+- Organização da interação entre usuário e assistente.
+
+### 2.2 Agendamento e consulta
 
 ![Agendamento pelo WhatsApp](02-whatsapp-agendamento-consulta.jpg)
 
-Demonstra um teste de agendamento com solicitação em linguagem natural, confirmação explícita e consulta posterior dos compromissos.
+**Descrição:** cenário de teste envolvendo solicitação de agendamento em linguagem natural, confirmação da operação e consulta de compromissos.
 
-**Funcionalidades demonstradas:** interpretação de solicitações, confirmação de agendamento e recuperação de informações.
+**Aspectos técnicos demonstrados:**
+- Interpretação de solicitações em linguagem natural.
+- Encaminhamento de intenções para fluxos específicos.
+- Confirmação explícita antes de operações.
+- Recuperação e apresentação de informações.
 
-## 3. Orquestração e execução no n8n
+**Limitação:** a captura não substitui a verificação dos registros persistidos no banco de dados.
 
-### Execução 9402
+## 3. Orquestração de workflows — n8n
+
+### 3.1 Execução 9402 — Workflow principal
 
 ![Execução 9402](03-n8n-execucao-9402.jpg)
 
-Registro de execução bem-sucedida do workflow principal, demonstrando a orquestração visual de etapas automatizadas.
+Registro de execução concluída com sucesso pelo n8n, apresentando a orquestração de etapas automatizadas.
 
-### Execução 3877
+### 3.2 Execução 3877 — Processamento e ramificações
 
 ![Execução 3877](04-n8n-execucao-3877.jpg)
 
-Evidência de execução e de ramificações relacionadas a tarefas, documentos e processamento de mensagens.
+Evidência de caminhos relacionados ao processamento de mensagens, tarefas e documentos.
 
-### Execução 3801
+### 3.3 Execução 3801 — Operações com tarefas
 
 ![Execução 3801](05-n8n-execucao-3801.jpg)
 
-Demonstra operações de consulta, atualização e cancelamento de tarefas, além da preparação de respostas.
+Representação de operações de consulta, atualização e cancelamento de tarefas, incluindo etapas de preparação de respostas.
 
-### Execução 3795
+### 3.4 Execução 3795 — Roteamento de intenções
 
 ![Execução 3795](06-n8n-execucao-3795.jpg)
 
-Apresenta roteamento de intenções e integração entre componentes de inteligência artificial e operações de dados.
+Demonstração da estrutura de roteamento de solicitações entre componentes de IA e operações de dados.
 
-### Execução 3749
+### 3.5 Execução 3749 — Integração de processos
 
 ![Execução 3749](07-n8n-execucao-3749.jpg)
 
-Evidencia a integração entre processamento de tarefas, operações de dados e envio de respostas pelo WhatsApp.
+Evidência da conexão entre processamento de tarefas, operações de dados e envio de respostas pelo WhatsApp.
 
-## 4. Integrações e componentes técnicos
+**Competências relacionadas às execuções:**
+- Modelagem e orquestração de workflows.
+- Construção de ramificações condicionais.
+- Integração entre serviços.
+- Inspeção e diagnóstico de execuções.
+- Tratamento e encaminhamento de informações.
 
-### Webhook e anexos
+## 4. Componentes e integrações
+
+### 4.1 Webhooks e anexos
 
 ![Webhook e anexos](08-n8n-webhook-anexos.jpg)
 
-Apresenta etapas de recebimento de mensagens, identificação de anexos e processamento inicial das solicitações.
+Estrutura de recebimento de mensagens e identificação de anexos para processamento.
 
-### Agente de agenda
+### 4.2 Agente de agenda
 
 ![Agente de agenda](09-n8n-agente-agenda.jpg)
 
-Demonstra a estrutura de automação responsável por interpretar solicitações relacionadas à agenda e encaminhá-las às operações correspondentes.
+Fluxo de interpretação de solicitações relacionadas à agenda e encaminhamento às operações correspondentes.
 
-### Tarefas e lembretes
+### 4.3 Tarefas e lembretes
 
 ![Tarefas e lembretes](10-n8n-tarefas-lembretes.jpg)
 
-Apresenta operações de criação, consulta, atualização e cancelamento de tarefas e lembretes.
+Estrutura de automação para operações relacionadas ao gerenciamento de tarefas e lembretes.
 
-### Roteamento de tarefas
+### 4.4 Roteamento de tarefas
 
 ![Roteamento de tarefas](11-n8n-roteamento-tarefas.jpg)
 
-Demonstra a distribuição de solicitações entre diferentes caminhos de execução, conforme a intenção identificada.
+Distribuição de solicitações entre caminhos de execução conforme a intenção identificada.
 
-## 5. Competências técnicas evidenciadas
+## 5. Competências técnicas demonstradas
 
-- Orquestração de workflows utilizando n8n.
-- Integração de sistemas por webhooks e APIs.
-- Desenvolvimento de interfaces conversacionais pelo WhatsApp.
-- Integração de modelos de inteligência artificial em processos automatizados.
-- Estruturação de operações de leitura, criação e atualização de dados.
-- Implementação de fluxos condicionais e confirmação de ações.
-- Análise de execuções, identificação de erros e validação de fluxos.
-- Documentação de arquitetura e apresentação de evidências técnicas.
+| Área | Competências evidenciadas |
+|---|---|
+| Automação | Modelagem, implementação e inspeção de workflows no n8n |
+| Inteligência artificial | Integração de componentes de IA e roteamento de intenções |
+| Integração de sistemas | Utilização de webhooks e APIs |
+| Interfaces conversacionais | Construção de interações pelo WhatsApp |
+| Operações de dados | Estruturação de fluxos de consulta, criação e atualização |
+| Engenharia de processos | Condicionais, confirmações e encaminhamento de ações |
+| Diagnóstico técnico | Análise de execuções e identificação de falhas |
+| Documentação | Registro de arquitetura, componentes e evidências |
 
-## 6. Limitações e segurança
+Essas competências são sustentadas pelos cenários documentados, respeitando as limitações das capturas disponíveis.
 
-As imagens representam registros de desenvolvimento e testes em momentos específicos.
+## 6. Limitações, validação e segurança
 
-Os status de execução bem-sucedida demonstram que os caminhos registrados foram executados sem erro reportado pelo n8n, mas não substituem testes automatizados, auditorias de segurança ou validações de desempenho.
+As evidências representam registros de implementação e testes em momentos específicos.
 
-Antes da publicação, as capturas devem ser revisadas para evitar exposição de credenciais, tokens, identificadores internos, URLs sensíveis e dados pessoais.
+Uma execução marcada como bem-sucedida no n8n significa que o workflow terminou sem erro reportado naquela execução. Isso não comprova automaticamente a correção de todos os resultados, a segurança da solução ou sua estabilidade em produção.
+
+A publicação de evidências deve seguir critérios de proteção de informações:
+
+- Não divulgar credenciais, tokens ou chaves de API.
+- Não expor URLs sensíveis ou webhooks de produção.
+- Não publicar dados pessoais sem autorização.
+- Utilizar informações fictícias ou anonimizadas nos exemplos.
+- Verificar identificadores e informações de infraestrutura.
+- Documentar separadamente funcionalidades testadas e funcionalidades planejadas.
+
+**Status de auditoria:** revisão documental realizada; inspeção individual de segurança das imagens ainda pendente.
 
 ## 7. Documentação complementar
 
-Consulte também:
-
 - [Arquitetura técnica](../docs/arquitetura.md)
-- [Case técnico de agendamentos](../case-studies/agendamentos-whatsapp.md)
+- [Estudo de caso — Agendamentos pelo WhatsApp](../case-studies/agendamentos-whatsapp.md)
 
 ---
 
-**MEU CONSULTOR AI — Portfólio técnico de automação, inteligência artificial e integração de sistemas.**
+**MEU CONSULTOR AI**
+
+Projeto autoral de inteligência artificial aplicada, automação de processos, integração de sistemas e desenvolvimento de soluções SaaS.
+
+*Documentação técnica em evolução, com evidências de implementação e testes.*
